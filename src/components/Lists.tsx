@@ -1,16 +1,17 @@
 import React from "react";
+import { Istate as IProps} from "../App"
 
-interface Iprops {
-    people: {
-        name: string
-        age: number
-        url: string
-        note?: string
-    }[]
-}
+// interface Iprops {
+//     people: {
+//         name: string
+//         age: number
+//         url: string
+//         note?: string
+//     }[]
+// }
 
 
-const List: React.FC<Iprops> = ({ people }) => {
+const List: React.FC<IProps> = ({ people }) => {
 
     const renderList = (): JSX.Element[] => {
         return people.map((person) => {
